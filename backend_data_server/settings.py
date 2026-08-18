@@ -133,5 +133,20 @@ MAILERS = {
     },
 }
 
-API_URL = 'https://expert-funicular-jjr7xg44xq4x2p5g6-8000.app.github.dev/'
+API_URL = 'https://jsonplaceholder.typicode.com/posts'
 
+SRF_TRUSTED_ORIGINS = [
+  "https://*.app.github.dev", # Solo si utiliza Codespaces
+  "https://localhost:8000",
+  "http://127.0.0.1:8000"
+]
+
+ALLOWED_HOSTS = [
+  "*", "usuario01"
+]
+
+# Fallo: acceso sin autenticación
+LOGIN_URL = '/login/'
+
+# Éxito: luego de autenticación exitosa
+LOGIN_REDIRECT_URL = '/'
