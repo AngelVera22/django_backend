@@ -39,8 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "homepage"
-]
+    "homepage",
+    "dashboard"
+]   
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -131,3 +132,6 @@ MAILERS = {
         "BACKEND": "django.core.mail.backends.console.EmailBackend",
     },
 }
+
+API_URL = 'https://expert-funicular-jjr7xg44xq4x2p5g6-8000.app.github.dev/'
+
